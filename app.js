@@ -1,6 +1,11 @@
-function add(n1, n2) {
-    return n1 + n2;
+var userInput;
+var userName;
+userInput = 5;
+userInput = 'Manish';
+if (typeof userInput === 'string') {
+    userName = userInput;
 }
-var number1 = 2;
-var number2 = 5;
-console.log(add(number1, number2));
+function generateError(message, code) {
+    throw { message: message, code: code };
+}
+generateError('An error occurred', 500);
